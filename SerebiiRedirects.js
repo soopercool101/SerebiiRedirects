@@ -3,7 +3,7 @@ var pokemonArray = ["MissingNo", "bulbasaur", "ivysaur", "venusaur", "charmander
 var generation = Number(getQueryVariable("g"));
 if(generation == false || generation == 0)
 {
-    generation = "8";
+    generation = 8;
 }
 var dexStr = "";
 var endStr = ".shtml";
