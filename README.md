@@ -1,4 +1,4 @@
-# SerebiiRedirects
+# Serebii Redirects
 Search redirects to the proper dex pages on Serebii.net
 
 ## How to use
