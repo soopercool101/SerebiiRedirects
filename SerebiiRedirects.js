@@ -33,23 +33,27 @@ switch(generation)
     break;
 }
 var pokemonName = getQueryVariable("p").toLowerCase();
-var pokemon = pokemonName;
+var pokemon;
 if(generation < 8)
 {
-    pokemon = pokemonArray.indexOf(pokemonName);
+	pokemon = pokemonArray.indexOf(pokemonName).toString().padStart(3, "0");
+}
+else
+{
+    pokemon = pokemonName.replace(" ", "");
 }
 window.location.replace('https://www.serebii.net/pokedex' + dexStr + '/' + pokemon + endStr);
 
 function getQueryVariable(variable)
 {
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable)
-                {
-                    return pair[1];
-                }
-       }
-       return(false);
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable)
+        {
+            return pair[1];
+        }
+    }
+    return(false);
 }
