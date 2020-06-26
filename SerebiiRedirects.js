@@ -32,7 +32,7 @@ switch(generation)
         endStr = "/";
     break;
 }
-var pokemonName = getQueryVariable("p").toLowerCase();
+var pokemonName = getQueryVariable("p").toLowerCase().replace("fetchd", "fetch'd");
 var pokemon;
 if(generation < 8)
 {
@@ -41,6 +41,7 @@ if(generation < 8)
 else
 {
     pokemon = pokemonName.replace(" ", "");
+    pokemon = pokemon.replace("fetchd", "fetch'd");
 }
 window.location.replace('https://www.serebii.net/pokedex' + dexStr + '/' + pokemon + endStr);
 
