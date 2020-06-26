@@ -5,7 +5,7 @@ Search redirects to the proper dex pages on Serebii.net
 These are setup for in-browser search engines or plugins to use. Use the following links (replace %s with whatever your browser search uses)
 
 ### Current Generation Search
-`https://soopercool101.github.io/SerebiiRedirects/index.html?g=1&p=%s`
+`https://soopercool101.github.io/SerebiiRedirects/index.html?p=%s`
 
 ### Generation 1 Search
 `https://soopercool101.github.io/SerebiiRedirects/index.html?g=1&p=%s`
