@@ -30,3 +30,6 @@ These are setup for in-browser search engines or plugins to use. Use the followi
 
 ### Generation 8 Search
 `https://soopercool101.github.io/SerebiiRedirects/index.html?g=8&p=%s`
+
+### Eventdex Search
+`https://soopercool101.github.io/SerebiiRedirects/index.html?g=-1&p=%s`
