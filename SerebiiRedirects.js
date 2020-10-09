@@ -7,6 +7,7 @@ if(generation == false || generation == 0)
 }
 var dexStr = "";
 var endStr = ".shtml";
+var dexStart = "poke";
 switch(generation)
 {
     case 2:
@@ -31,19 +32,22 @@ switch(generation)
         dexStr = "-swsh";
         endStr = "/";
         break;
+    case "event":
+        dexStart = "events/";
+        break;
 }
 var pokemonName = getQueryVariable("p").toLowerCase().replace("fetchd", "fetch'd");
 var pokemon;
-if(generation < 8)
+if(generation < 8 || generation = "event")
 {
-	pokemon = pokemonArray.indexOf(pokemonName).toString().padStart(3, "0");
+    pokemon = pokemonArray.indexOf(pokemonName).toString().padStart(3, "0");
 }
 else
 {
     pokemon = pokemonName.replace(" ", "");
     pokemon = pokemon.replace("fetchd", "fetch'd");
 }
-window.location.replace('https://www.serebii.net/pokedex' + dexStr + '/' + pokemon + endStr);
+window.location.replace('https://www.serebii.net/' + dexStart + 'dex' + dexStr + '/' + pokemon + endStr);
 
 function getQueryVariable(variable)
 {
