@@ -32,13 +32,13 @@ switch(generation)
         dexStr = "-swsh";
         endStr = "/";
         break;
-    case "event":
+    case -1:
         dexStart = "events/";
         break;
 }
 var pokemonName = getQueryVariable("p").toLowerCase().replace("fetchd", "fetch'd");
 var pokemon;
-if(generation < 8 || generation == "event")
+if(generation < 8)
 {
     pokemon = pokemonArray.indexOf(pokemonName).toString().padStart(3, "0");
 }
