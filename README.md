@@ -33,3 +33,6 @@ These are setup for in-browser search engines or plugins to use. Use the followi
 
 ### Eventdex Search
 `https://soopercool101.github.io/SerebiiRedirects/index.html?g=-1&p=%s`
+
+### Itemdex Search
+`https://soopercool101.github.io/SerebiiRedirects/index.html?g=-2&p=%s`
