@@ -39,7 +39,7 @@ switch(generation)
         dexStart = "item";
         break;
 }
-var pokemonName = getQueryVariable("p").toLowerCase().replace("fetchd", "fetch'd");
+var pokemonName = getQueryVariable("p").toLowerCase();
 var pokemon;
 if(generation == -2)
 {
@@ -52,7 +52,6 @@ else if(generation < 8)
 else
 {
     pokemon = pokemonName.replace("%20", "").replace(" ", "");
-    pokemon = pokemon.replace("fetchd", "fetch'd");
 }
 window.location.replace('https://www.serebii.net/' + dexStart + 'dex' + dexStr + '/' + pokemon + endStr);
 
