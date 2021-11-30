@@ -35,6 +35,9 @@ switch(generation)
     case -1:
         dexStart = "events/";
         break;
+    case -2:
+        dexStart = "item";
+        break;
 }
 var pokemonName = getQueryVariable("p").toLowerCase().replace("fetchd", "fetch'd");
 var pokemon;
