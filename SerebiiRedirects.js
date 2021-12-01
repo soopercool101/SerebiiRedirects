@@ -43,7 +43,7 @@ var pokemonName = getQueryVariable("p").toLowerCase();
 var pokemon;
 if(generation == -2)
 {
-    pokemon = pokemonName.replace("%20", "").replace(" ", "");
+    pokemon = pokemonName.replace(/%20/g, "").replace(/ /g, "");
 }
 else if(generation < 8)
 {
@@ -51,7 +51,7 @@ else if(generation < 8)
 }
 else
 {
-    pokemon = pokemonName.replace("%20", "").replace(" ", "");
+    pokemon = pokemonName.replace(/%20/g, "").replace(/ /g, "");
 }
 window.location.replace('https://www.serebii.net/' + dexStart + 'dex' + dexStr + '/' + pokemon + endStr);
 
