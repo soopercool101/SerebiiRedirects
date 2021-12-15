@@ -39,19 +39,15 @@ switch(generation)
         dexStart = "item";
         break;
 }
-var pokemonName = getQueryVariable("p").toLowerCase();
+var pokemonName = getQueryVariable("p").toLowerCase().replace(/%20/g, " ").replace(/ /g, " ");
 var pokemon;
 if(generation == -2)
 {
-    pokemon = pokemonName.replace(/%20/g, "").replace(/ /g, "");
+    pokemon = pokemonName.replace(" ", "");
 }
 else if(generation < 8)
 {
     pokemon = pokemonArray.indexOf(pokemonName).toString().padStart(3, "0");
-}
-else
-{
-    pokemon = pokemonName.replace(/%20/g, "").replace(/ /g, "");
 }
 window.location.replace('https://www.serebii.net/' + dexStart + 'dex' + dexStr + '/' + pokemon + endStr);
 
