@@ -38,10 +38,13 @@ switch(generation)
     case -2:
         dexStart = "item";
         break;
+    case -3:
+        dexStart = "ability";
+        break;
 }
 var pokemonName = getQueryVariable("p").toLowerCase().replace(/%20/g, " ").replace(/ /g, " ");
 var pokemon;
-if(generation == -2 || generation >= 8)
+if(generation <= -2 || generation >= 8)
 {
     pokemon = pokemonName.replace(" ", "");
 }
