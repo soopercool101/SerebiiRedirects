@@ -41,11 +41,11 @@ switch(generation)
 }
 var pokemonName = getQueryVariable("p").toLowerCase().replace(/%20/g, " ").replace(/ /g, " ");
 var pokemon;
-if(generation == -2)
+if(generation == -2 || generation >= 8)
 {
     pokemon = pokemonName.replace(" ", "");
 }
-else if(generation < 8)
+else
 {
     pokemon = pokemonArray.indexOf(pokemonName).toString().padStart(3, "0");
 }
