@@ -3,7 +3,7 @@ var pokemonArray = ["missingno.", "bulbasaur", "ivysaur", "venusaur", "charmande
 var generation = Number(getQueryVariable("g"));
 if(generation == false || generation == 0)
 {
-    generation = 8;
+    generation = 9;
 }
 var dexStr = "";
 var endStr = ".shtml";
@@ -30,6 +30,10 @@ switch(generation)
         break;
     case 8:
         dexStr = "-swsh";
+        endStr = "/";
+        break;
+    case 9:
+        dexStr = "-sv";
         endStr = "/";
         break;
     case -1:
