@@ -31,6 +31,9 @@ These are setup for in-browser search engines or plugins to use. Use the followi
 ### [Generation 8](https://www.serebii.net/pokedex-swsh/) Search
 `https://soopercool101.github.io/SerebiiRedirects/index.html?g=8&p=%s`
 
+### [Generation 9](https://www.serebii.net/pokedex-sv/) Search
+`https://soopercool101.github.io/SerebiiRedirects/index.html?g=9&p=%s`
+
 ### [Event Database](https://www.serebii.net/events/) Search
 `https://soopercool101.github.io/SerebiiRedirects/index.html?g=-1&p=%s`
 
