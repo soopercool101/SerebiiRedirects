@@ -50,7 +50,7 @@ var pokemonName = getQueryVariable("p").toLowerCase().replace(/%20/g, " ").repla
 var pokemon;
 if(generation <= -2 || generation >= 8)
 {
-    pokemon = pokemonName.replace(" ", "");
+    pokemon = pokemonName.replace(" ", "").replace("+", "");
 }
 else
 {
