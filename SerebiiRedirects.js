@@ -46,7 +46,7 @@ switch(generation)
         dexStart = "ability";
         break;
 }
-var pokemonName = getQueryVariable("p").toLowerCase().replace(/%20/g, " ").replace(/ /g, " ");
+var pokemonName = getQueryVariable("p").toLowerCase().replace(/%20/g, " ").replace(/ /g, " ").replace("+", " ");
 var pokemon;
 if(generation <= -2 || generation >= 8)
 {
